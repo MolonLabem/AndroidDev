@@ -6,8 +6,11 @@ import kotlinx.android.synthetic.main.activity_main.*
 import net.objecthunter.exp4j.ExpressionBuilder
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        supportFragmentManager.beginTransaction()
+            .add(R.id.fragment_container, MainFragment()).commit()
         setContentView(R.layout.activity_main)
 
         button0.setOnClickListener {
@@ -89,8 +92,6 @@ class MainActivity : AppCompatActivity() {
             inputText.text.clear()
         }
     }
-
-/*Function to calculate the expressions using expression builder library*/
 
     fun evaluateExpression(string: String, clear: Boolean) {
         if (clear) {

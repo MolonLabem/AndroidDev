@@ -164,7 +164,7 @@
         style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@id/button8"
+        android:layout_toRightOf="@id/buttonSign"
         android:layout_below="@id/button2"
         android:text="0"
         android:textSize="20sp"/>
@@ -189,8 +189,7 @@
         android:layout_below="@id/buttonDivide"
         android:layout_toRightOf="@id/button9"
         android:text="*"
-        android:textSize="20sp"
-        android:layout_toEndOf="@id/button9" />
+        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/buttonSubtract"
@@ -200,8 +199,7 @@
         android:layout_below="@id/buttonMultiply"
         android:layout_toRightOf="@id/button6"
         android:text="-"
-        android:textSize="20sp"
-        android:layout_toEndOf="@id/button6" />
+        android:textSize="20sp"/>
 
     <Button
         android:id="@+id/buttonAdd"

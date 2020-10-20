@@ -17,8 +17,7 @@
         android:text="To Do Details"
         android:textColor="#007BFF"
         android:textSize="20sp"
-        android:textStyle="bold">
-    </TextView>
+        android:textStyle="bold"></TextView>
 
     <TextView
         android:id="@+id/idTextView"
@@ -26,8 +25,7 @@
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
         android:textSize="16sp"
-        tools:text="ID">
-    </TextView>
+        tools:text="ID"></TextView>
 
     <TextView
         android:id="@+id/titleTextView"
@@ -35,8 +33,7 @@
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
         android:textSize="16sp"
-        tools:text="Title">
-    </TextView>
+        tools:text="Title"></TextView>
 
     <TextView
         android:id="@+id/descriptionTextView"
@@ -44,8 +41,7 @@
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
         android:textSize="16sp"
-        tools:text="Description">
-    </TextView>
+        tools:text="Description"></TextView>
 
     <TextView
         android:id="@+id/statusTextView"
@@ -53,8 +49,7 @@
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
         android:textSize="16sp"
-        tools:text="Status">
-    </TextView>
+        tools:text="Status"></TextView>
 
     <TextView
         android:id="@+id/categoryTextView"
@@ -62,8 +57,7 @@
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
         android:textSize="16sp"
-        tools:text="Category">
-    </TextView>
+        tools:text="Category"></TextView>
 
     <TextView
         android:id="@+id/durationTextView"
@@ -71,7 +65,6 @@
         android:layout_height="wrap_content"
         android:textColor="@android:color/black"
         android:textSize="16sp"
-        tools:text="Duration">
-    </TextView>
+        tools:text="Duration"></TextView>
 
 </LinearLayout>

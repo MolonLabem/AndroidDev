@@ -16,44 +16,38 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number"
-        android:hint="Enter ID">
-    </EditText>
+        android:hint="Enter ID"></EditText>
 
     <EditText
         android:id="@+id/titleEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Title">
-    </EditText>
+        android:hint="Enter Title"></EditText>
 
     <EditText
         android:id="@+id/descriptionEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Description">
-    </EditText>
+        android:hint="Enter Description"></EditText>
 
     <EditText
         android:id="@+id/statusEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Status">
-    </EditText>
+        android:hint="Enter Status"></EditText>
 
     <EditText
         android:id="@+id/categoryEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Category">
-    </EditText>
+        android:hint="Enter Category"></EditText>
 
     <EditText
         android:id="@+id/durationEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter Duration"
-        android:inputType="number">
-    </EditText>
+        android:inputType="number"></EditText>
 
     <Button
         android:id="@+id/addButton"

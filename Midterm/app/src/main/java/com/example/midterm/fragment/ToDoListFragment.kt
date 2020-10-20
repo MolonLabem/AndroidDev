@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.midterm.adapter.Adapter
 import com.example.midterm.R
+import com.example.midterm.adapter.Adapter
 import com.example.midterm.model.ToDoItem
 import kotlinx.android.synthetic.main.fragment_item_list.*
 

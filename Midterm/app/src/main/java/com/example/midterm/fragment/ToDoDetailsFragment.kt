@@ -10,7 +10,7 @@ import com.example.midterm.R
 import com.example.midterm.model.ToDoItem
 import kotlinx.android.synthetic.main.fragment_item_details.*
 
-class ToDoDetailsFragment: Fragment() {
+class ToDoDetailsFragment : Fragment() {
 
     companion object {
         const val ARG_TO_DO_ITEM = "toDoItem"
@@ -34,7 +34,7 @@ class ToDoDetailsFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
+        idTextView.text = toDoInfo.id.toString()
         titleTextView.text = toDoInfo.title
         descriptionTextView.text = toDoInfo.description
         statusTextView.text = toDoInfo.status

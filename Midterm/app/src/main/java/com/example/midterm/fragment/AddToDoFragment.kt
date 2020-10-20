@@ -6,11 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.example.midterm.adapter.Adapter
 import com.example.midterm.R
-import com.example.midterm.model.ToDoItem
 import kotlinx.android.synthetic.main.fragment_add_to_do.*
-import kotlinx.android.synthetic.main.fragment_item_list.*
 
 class AddToDoFragment : Fragment() {
 

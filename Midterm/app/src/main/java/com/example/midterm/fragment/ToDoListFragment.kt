@@ -64,7 +64,7 @@ class ToDoListFragment : Fragment() {
                     description = "React JS project",
                     status = "Urgent",
                     category = "Homework",
-                    duration = 60
+                    duration = 100
                 )
             )
             add(

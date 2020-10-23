@@ -6,9 +6,10 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.lab4.model.Mail
 import kotlinx.android.synthetic.main.mail_list_fragment.view.*
 
-class Adapter constructor(private val messageClickListener: (text:String) -> Unit): RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+class Adapter constructor(private val messageClickListener: (text: String) -> Unit) :
+    RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
-    private var messageList:MutableList<Mail> = mutableListOf()
+    private var messageList: MutableList<Mail> = mutableListOf()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -24,14 +25,14 @@ class Adapter constructor(private val messageClickListener: (text:String) -> Uni
 
     }
 
-    fun addItems(list: List<Mail>){
+    fun addItems(list: List<Mail>) {
         messageList.clear()
         messageList.addAll(list)
         notifyDataSetChanged()
     }
 
-    private class ContactViewHolder(inflater: LayoutInflater, parent: ViewGroup):
-        RecyclerView.ViewHolder(inflater.inflate(R.layout.mail_list_fragment, parent, false)){
+    private class ContactViewHolder(inflater: LayoutInflater, parent: ViewGroup) :
+        RecyclerView.ViewHolder(inflater.inflate(R.layout.mail_list_fragment, parent, false)) {
 
         private val senderTextView = itemView.senderTextView
         private val titleTextView = itemView.titleTextView
@@ -39,7 +40,7 @@ class Adapter constructor(private val messageClickListener: (text:String) -> Uni
         private val descriptionTextView = itemView.descriptionTextView
         private val itemLayout = itemView.itemLayout
 
-        fun bind(mail:Mail, messageClickListener: (text: String) -> Unit){
+        fun bind(mail: Mail, messageClickListener: (text: String) -> Unit) {
             senderTextView.text = mail.sender
             titleTextView.text = mail.title
             dateTextView.text = mail.date

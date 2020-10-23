@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import kotlinx.android.synthetic.main.mail_detail_fragment.*
 
-class MailDetailFrag(private val text:String): Fragment() {
+class MailDetailFrag(private val text: String) : Fragment() {
 
     companion object {
         fun create(text: String) = MailDetailFrag(text)

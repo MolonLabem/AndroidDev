@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.lab4.model.Mail
 import kotlinx.android.synthetic.main.item_in_list.*
 
-class ShortMailFragment(): Fragment() {
+class ShortMailFragment : Fragment() {
 
     private var messageAdapter: Adapter? = null
 
@@ -23,13 +23,61 @@ class ShortMailFragment(): Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val messages:MutableList<Mail> = mutableListOf()
-        messages.add(Mail("Totaly not a phishing mail!", "Your mom", "Oct 25", "Hello, my dear son, you've won $1000", "Spam"))
-        messages.add(Mail("Instagram", "Instagram official", "Oct 27", "MolonLabe, you have been liked by 5 poeple!", "Social"))
-        messages.add(Mail("Пакет вопросов Синхрон-Lite", "Dinabank", "Sept 20","Вы получили пакет по подписке динабанк", "Urgent"))
-        messages.add(Mail("Электронный чек 24123", "Wolt", "Oct 23", "Ваш электронный чек доступен здесь", "Food"))
-        messages.add(Mail("Security alert for your liked Google Account", "LeetCode", "Oct 15","New sign-in to your linked account","Google"))
-        messages.add(Mail("WARTILE and 5 other items from your Steam wishlist are now available!", "Steam", "Sept 19", "SAVE NOW ON 6 GAMES YOU’VE WISHED FOR!", "Games"))
+        val messages: MutableList<Mail> = mutableListOf()
+        messages.add(
+            Mail(
+                "Totaly not a phishing mail!",
+                "Your mom",
+                "Oct 25",
+                "Hello, my dear son, you've won $1000",
+                "Spam"
+            )
+        )
+        messages.add(
+            Mail(
+                "Instagram",
+                "Instagram official",
+                "Oct 27",
+                "MolonLabe, you have been liked by 5 poeple!",
+                "Social"
+            )
+        )
+        messages.add(
+            Mail(
+                "Пакет вопросов Синхрон-Lite",
+                "Dinabank",
+                "Sept 20",
+                "Вы получили пакет по подписке динабанк",
+                "Urgent"
+            )
+        )
+        messages.add(
+            Mail(
+                "Электронный чек 24123",
+                "Wolt",
+                "Oct 23",
+                "Ваш электронный чек доступен здесь",
+                "Food"
+            )
+        )
+        messages.add(
+            Mail(
+                "Security alert for your liked Google Account",
+                "LeetCode",
+                "Oct 15",
+                "New sign-in to your linked account",
+                "Google"
+            )
+        )
+        messages.add(
+            Mail(
+                "WARTILE and 5 other items from your Steam wishlist are now available!",
+                "Steam",
+                "Sept 19",
+                "SAVE NOW ON 6 GAMES YOU’VE WISHED FOR!",
+                "Games"
+            )
+        )
 
         messageAdapter = Adapter(
             messageClickListener = {
@@ -46,7 +94,7 @@ class ShortMailFragment(): Fragment() {
 
     }
 
-    private fun goToMailDetails(text:String){
+    private fun goToMailDetails(text: String) {
         fragmentManager
             ?.beginTransaction()
             ?.replace(R.id.right, MailDetailFrag.create(text))

@@ -1,9 +1,8 @@
 package com.example.lab4
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.lab4.ShortMailFragment
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -19,18 +18,18 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun init(){
+    private fun init() {
         val fragmentMail = ShortMailFragment()
         val fragmentTransaction = fragmentManager.beginTransaction()
         fragmentTransaction.replace(R.id.left, fragmentMail)
         fragmentTransaction.commit()
     }
 
-    private fun logout(){
+    private fun logout() {
         LoginActivity().clear()
     }
 
-    private fun goToLoginPage(){
+    private fun goToLoginPage() {
         val intent = Intent(this, LoginActivity::class.java)
         intent.putExtra("exitStatus", true)
         startActivity(intent)
